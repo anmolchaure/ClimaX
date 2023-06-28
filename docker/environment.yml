@@ -1,4 +1,4 @@
-name: climaX
+
 channels:
   - pytorch
   - conda-forge
