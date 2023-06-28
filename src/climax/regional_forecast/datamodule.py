@@ -11,13 +11,13 @@ from pytorch_lightning import LightningDataModule
 from torch.utils.data import DataLoader, IterableDataset
 from torchvision.transforms import transforms
 
-from climax.pretrain.dataset import (
+from ClimaX.src.climax.pretrain.dataset import (
     Forecast,
     IndividualForecastDataIter,
     NpyReader,
     ShuffleIterableDataset,
 )
-from climax.utils.data_utils import get_region_info
+from ClimaX.src.climax.utils.data_utils import get_region_info
 
 
 def collate_fn_regional(batch):
