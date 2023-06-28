@@ -8,15 +8,15 @@ import torch
 from pytorch_lightning import LightningModule
 from torchvision.transforms import transforms
 
-from climax.regional_forecast.arch import RegionalClimaX
-from climax.utils.lr_scheduler import LinearWarmupCosineAnnealingLR
-from climax.utils.metrics import (
+from ClimaX.src.climax.regional_forecast.arch import RegionalClimaX
+from ClimaX.src.climax.utils.lr_scheduler import LinearWarmupCosineAnnealingLR
+from ClimaX.src.climax.utils.metrics import (
     lat_weighted_acc,
     lat_weighted_mse,
     lat_weighted_mse_val,
     lat_weighted_rmse,
 )
-from climax.utils.pos_embed import interpolate_pos_embed
+from ClimaX.src.climax.utils.pos_embed import interpolate_pos_embed
 
 
 class RegionalForecastModule(LightningModule):
