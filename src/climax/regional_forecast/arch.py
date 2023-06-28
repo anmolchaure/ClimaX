@@ -2,7 +2,7 @@
 # Licensed under the MIT license.
 
 import torch
-from climax.arch import ClimaX
+from ClimaX.src.climax.arch import ClimaX
 
 class RegionalClimaX(ClimaX):
     def __init__(self, default_vars, img_size=..., patch_size=2, embed_dim=1024, depth=8, decoder_depth=2, num_heads=16, mlp_ratio=4, drop_path=0.1, drop_rate=0.1):
