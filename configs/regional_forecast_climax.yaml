@@ -3,8 +3,8 @@ seed_everything: 42
 # ---------------------------- TRAINER -------------------------------------------
 trainer:
   #default_root_dir: ${oc.env:OUTPUT_DIR,/lustre/orion/proj-shared/stf006/muraligm/ML/ClimaX/exps/pretrain_climax}
-  default_root_dir: ${oc.env:OUTPUT_DIR,/lustre/orion/proj-shared/stf006/muraligm/ML/ClimaX/exps/pretrain_climax}
-
+  #default_root_dir: ${oc.env:OUTPUT_DIR,/lustre/orion/proj-shared/stf006/muraligm/ML/ClimaX/exps/pretrain_climax}
+   default_root_dir: ${oc.env:OUTPUT_DIR,/content/drive/MyDrive/era5data_npz}
 
   precision: 16
 
